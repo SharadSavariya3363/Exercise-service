@@ -1,27 +1,24 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { DataEntryComponent } from './data-entry/data-entry.component';
-import { DataDisplayComponent } from './data-display/data-display.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { AppRoutingModule } from './app-routing';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataEntryComponent,
-    DataDisplayComponent,
     HeaderComponent
   ],
   imports: [
-    FormsModule,
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
