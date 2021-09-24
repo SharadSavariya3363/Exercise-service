@@ -1,0 +1,27 @@
+
+    <div class="row">
+        <div class="col-12">
+            <h4>Form Data:</h4>
+            <table class="table table-stripped">        <!--display data of an array into table form-->
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>State</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let el of displayData">      <!-- add new table row for every form data -->
+                        <td> {{el.name}} </td>         <!-- el to go through every element of Array(displayData) -->
+                        <td> {{el.email}} </td> 
+                        <td> {{el.address}} </td> 
+                        <td> {{el.state}} </td>
+                        <td> {{el.city}} </td> 
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
